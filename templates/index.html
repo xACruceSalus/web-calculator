@@ -23,7 +23,8 @@
           <div class="row">
             <div class="small-4 columns">
               <h4>Input A Number</h4>
-              <input type="number" placeholder="Enter any number" name='number1'/>
+              <input type="number" value={% if answer %}{{answer}}
+                  {% else %} '' {% endif %} placeholder="Enter any number" name='number1'/>  
             </div>
             <div class="small-4 columns">
               <h4>Select Operator</h4>
